@@ -7,7 +7,7 @@ variable "instance_type" {
 }
 
 variable "ami_id" {
-  default = "ami-0e2c8caa4b6378d8c" #Ubuntu AMI
+  default = "ami-0e2c8caa4b6378d8c" #Ubuntu
 }
 
 variable "key_name" {
