@@ -39,7 +39,7 @@ resource "aws_security_group" "jenkins_sg" {
 # Allow SSH from IP
 resource "aws_vpc_security_group_ingress_rule" "ssh" {
   security_group_id = aws_security_group.jenkins_sg.id
-  cidr_ipv4         = "your-ip/32"  # Replace with your actual IP
+  cidr_ipv4         = "${var.my_ip}/32"
   from_port         = 22
   to_port           = 22
   ip_protocol       = "tcp"

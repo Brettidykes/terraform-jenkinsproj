@@ -21,3 +21,8 @@ variable "jenkins_sg_name" {
 variable "bucket_name" {
   description = "S3 bucket for Jenkins artifacts"
 }
+
+variable "my_ip" {
+  description = "Your personal public IP"
+  type        = string
+}
